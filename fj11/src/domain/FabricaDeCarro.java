@@ -1,3 +1,5 @@
+package domain;
+
 class FabricaDeCarro {
     
     private static FabricaDeCarro instance;

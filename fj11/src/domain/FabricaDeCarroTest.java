@@ -1,3 +1,5 @@
+package domain;
+
 class FabricaDeCarroTest {
 
     public static void main (String[] args) {

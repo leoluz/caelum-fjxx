@@ -1,3 +1,5 @@
+package domain;
+
 class EmpresaTest {
 
     static Funcionario f1;

@@ -1,3 +1,5 @@
+package domain;
+
 class PessoaFisica {
 
     private String cpf;

@@ -1,3 +1,5 @@
+package domain;
+
 class Empresa {
     
     private static int identificador;

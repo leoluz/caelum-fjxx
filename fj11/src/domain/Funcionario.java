@@ -1,3 +1,5 @@
+package domain;
+
 class Funcionario { 
     
     private static int identificador;

@@ -1,3 +1,5 @@
+package domain;
+
 class Data {
 
     private int dia;

@@ -1,3 +1,5 @@
+package domain;
+
 class FuncionarioTest {
 
     public static void main (String[] args) {
