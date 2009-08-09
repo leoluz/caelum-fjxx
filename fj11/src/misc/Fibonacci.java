@@ -1,3 +1,5 @@
+package misc;
+
 class Fibonacci {
 
     int calcularFibonacci(int n) {
