@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+    
+    <application>
+    	<message-bundle>messages</message-bundle>
+    	<resource-bundle>
+    		<base-name>messages</base-name>
+    		<var>msgs</var>
+    	</resource-bundle>
+		<locale-config>
+			<default-locale>pt_BR</default-locale>
+			<supported-locale>en_US</supported-locale>
+		</locale-config>    	
+    </application>
+
+    <converter>
+    	<converter-for-class>br.com.caelum.fj26.model.CNPJ</converter-for-class>
+    	<converter-class>br.com.caelum.fj26.CNPJConverter</converter-class>
+    </converter>
+    
+    <lifecycle>
+    	<phase-listener>br.com.caelum.fj26.Autorizador</phase-listener>
+    </lifecycle>
+
+	<managed-bean>
+		<managed-bean-name>autenticador</managed-bean-name>
+		<managed-bean-class>br.com.caelum.fj26.bb.LoginHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>fornecBean</managed-bean-name>
+		<managed-bean-class>br.com.caelum.fj26.bb.FornecedorHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>sessao</property-name>
+			<value>#{requestScope.sessao}</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>contaPagarBean</managed-bean-name>
+		<managed-bean-class>br.com.caelum.fj26.bb.ContaPagarHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>fornecedorHandlerInjetado</property-name>
+			<value>#{fornecBean}</value>
+		</managed-property>
+	</managed-bean>
+	
+	<navigation-rule>
+		<from-view-id>/olajsf.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>/fornecedor.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/olajsf.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

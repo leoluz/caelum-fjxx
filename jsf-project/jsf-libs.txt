@@ -1,0 +1,11 @@
+total 5.4M
+-rw-r--r-- 1 wav909 wav909 185K 2009-08-28 22:28 commons-beanutils-1.7.0.jar
+-rw-r--r-- 1 wav909 wav909 558K 2009-08-28 22:28 commons-collections-3.2.jar
+-rw-r--r-- 1 wav909 wav909 141K 2009-08-28 22:28 commons-digester-1.8.jar
+-rw-r--r-- 1 wav909 wav909  52K 2009-08-28 22:28 commons-logging-1.1.jar
+-rw-r--r-- 1 wav909 wav909 316K 2009-08-28 22:28 jsf-api-1.2.jar
+-rw-r--r-- 1 wav909 wav909 1.2M 2009-08-28 22:28 jsf-impl-1.2.jar
+-rw-r--r-- 1 wav909 wav909 405K 2009-08-28 22:28 jstl-1.2.jar
+-rw-r--r-- 1 wav909 wav909 108K 2009-08-28 22:28 richfaces-api-3.1.0-rc3.jar
+-rw-r--r-- 1 wav909 wav909 1.1M 2009-08-28 22:28 richfaces-impl-3.1.0-rc3.jar
+-rw-r--r-- 1 wav909 wav909 1.4M 2009-08-28 22:28 richfaces-ui-3.1.0-rc3.jar

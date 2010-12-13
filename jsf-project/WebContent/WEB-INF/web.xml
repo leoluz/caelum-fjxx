@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd "
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd "
+         id="Contas_A_Pagar" version="2.5">
+
+  <display-name>projetojsf</display-name>
+
+  <!-- Arquivos que sao acessados quando / eh acessada -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm </welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Define a skin do richfaces. Ha varias opcoes -->
+  <context-param>
+    <param-name>org.richfaces.SKIN</param-name>
+    <!--<param-value>DEFAULT</param-value>-->
+    <!--<param-value>plain</param-value>-->
+    <!--<param-value>emeraldTown</param-value>-->
+    <param-value>blueSky</param-value>
+    <!--<param-value>wine</param-value>-->
+    <!--<param-value>japanCherry</param-value>-->
+    <!--<param-value>ruby</param-value>-->
+    <!--<param-value>classic</param-value>-->
+    <!-- param-value>deepMarine</param-value -->
+  </context-param>
+
+  <!-- Configura onde salvar o estado dos componentes. O padrao é server -->
+  <context-param>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>client</param-value>
+  </context-param>
+
+  <!-- Configura o filtro obrigatorio do Ajax4Jsf -->
+  <filter>
+    <display-name>Ajax4jsf Filter</display-name>
+    <filter-name>ajax4jsf</filter-name>
+    <filter-class>org.ajax4jsf.Filter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ajax4jsf</filter-name>
+    <servlet-name>Faces Servlet</servlet-name>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+  </filter-mapping>
+
+  <filter>
+  	<filter-name>HibernateSessionFilter</filter-name>
+  	<filter-class>br.com.caelum.fj26.util.HibernateSessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>HibernateSessionFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- Configura a servlet do JSF. -->
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class> javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>*.jsf</url-pattern>
+  </servlet-mapping>
+</web-app>
