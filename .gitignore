@@ -2,4 +2,8 @@
 *.swp
 .classpath
 .settings
+build/*
+bin/*
+.svn
+*.jar
 .project
