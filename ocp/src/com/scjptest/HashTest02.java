@@ -1,8 +1,3 @@
-/* OCP
- *
- * Copyright 2011 CVC Turismo Ltda, All rights reserved.
- * CVC PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.scjptest;
 import java.util.HashSet;
 
