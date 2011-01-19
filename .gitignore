@@ -3,7 +3,7 @@
 .classpath
 .settings
 build/*
-bin/*
+*bin/*
 .svn
 *.jar
 .project
