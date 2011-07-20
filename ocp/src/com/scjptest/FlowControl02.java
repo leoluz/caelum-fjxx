@@ -12,7 +12,7 @@ public class FlowControl02 {
 
         switch (i) {
             case 1: System.out.println("1");
-            default: System.out.println("default");
+            default: System.out.println("default"); break;
             case 3: System.out.println("3");
             case 10: System.out.println("10");
         }
