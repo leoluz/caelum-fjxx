@@ -1,0 +1,70 @@
+1. Declarations and Access Control
+    - identifiers & java beans       OK
+    - declare classes                OK
+    - declare interfaces             OK
+    - declare class members          OK
+
+2. OO
+    - encapsulation
+    - inheritance, is-a, has-a
+    - polymorphism
+    - overriding
+    - reference variable casting
+    - implementing an interface
+    - legal return types
+    - contructors and instantiation
+    - statics
+    - coupling and cohesion
+
+3. Assignments
+    - literals, assignments, variables                      ?
+    - passing variables into methods                        OK
+    - array declaration, contruction, and initialization    OK
+    - using wrapper classes and boxing                      ?
+    - overloading                                           ?
+    - garbage collection                                    OK
+
+4. Operators
+    - assignments operator      OK
+    - relational operator       OK
+    - instanceof comparison
+    - arithmetic operator 
+    - conditional operator
+    - logical operator
+
+5. Flow Control, Exceptions and Assertions
+    - if and switch statements                  OK
+    - loops and iterators                       OK
+    - handling exceptions                       OK
+    - common exceptions and errors              OK
+    - working with the assertion mechanism
+
+6. Strings, IO, Formating, Parsing
+    - Strings, StringBuilder and StringBuffer
+    - file navigation and IO
+    - serialization
+    - dates, numbers, and currency
+    - parsing, tokenizing, and formating
+
+7. Generics and Collections
+    - overriding hashCode() and equals()
+    - collections 
+    - using the collection framework
+    - generic types
+
+8. Inner Classes
+    - inner classes
+    - method-local inner classes
+    - anonymous inner classes
+    - static nested classes
+
+9. Threads
+    - defining, instatiating, and starting threads
+    - thread states and transitions
+    - synchronizing codes
+    - thread interation
+
+10. Development
+    - using the javac and java commands
+    - jar files
+    - using static imports
