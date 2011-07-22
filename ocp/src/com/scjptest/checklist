@@ -27,10 +27,10 @@
 4. Operators
     - assignments operator      OK
     - relational operator       OK
-    - instanceof comparison
-    - arithmetic operator 
-    - conditional operator
-    - logical operator
+    - instanceof comparison     OK
+    - arithmetic operator       OK
+    - conditional operator      OK
+    - logical operator          OK
 
 5. Flow Control, Exceptions and Assertions
     - if and switch statements                  OK
