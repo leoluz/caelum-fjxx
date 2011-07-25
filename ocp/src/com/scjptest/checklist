@@ -17,11 +17,11 @@
     - coupling and cohesion
 
 3. Assignments
-    - literals, assignments, variables                      ?
+    - literals, assignments, variables                      OK
     - passing variables into methods                        OK
     - array declaration, contruction, and initialization    OK
-    - using wrapper classes and boxing                      ?
-    - overloading                                           ?
+    - using wrapper classes and boxing                      OK
+    - overloading                                           OK
     - garbage collection                                    OK
 
 4. Operators
