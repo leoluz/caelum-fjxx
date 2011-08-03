@@ -53,16 +53,16 @@
     - generic types
 
 8. Inner Classes
-    - inner classes
-    - method-local inner classes
-    - anonymous inner classes
-    - static nested classes
+    - inner classes                                 OK
+    - method-local inner classes                    OK
+    - anonymous inner classes                       OK
+    - static nested classes                         OK
 
 9. Threads
-    - defining, instatiating, and starting threads
-    - thread states and transitions
-    - synchronizing codes
-    - thread interation
+    - defining, instatiating, and starting threads OK
+    - thread states and transitions                OK
+    - synchronizing codes                          OK
+    - thread interation                            OK
 
 10. Development
     - using the javac and java commands
@@ -70,22 +70,12 @@
     - using static imports
 
 
-# Exam01
-Declarations, Initialization, and Scoping       20%
-Flow Control                                    16%
-API Contents                                    17%
-Concurrency                                      0%
-OO Concepts                                     25%
-Collections and Generics                        44%
-Fundamentals                                    38%
-Total                                           25%
-
-# Exam02
-Declarations, Initialization, and Scoping       25%
-Flow Control                                    75%
-API Contents                                    13%
-Concurrency                                     50%
-OO Concepts                                     25%
-Collections and Generics                        13%
-Fundamentals                                    50%
-Total                                           30%
+                                             Exam01 Exam02
+Declarations, Initialization, and Scoping       20%    25%
+Flow Control                                    16%    75%
+API Contents                                    17%    13%
+Concurrency                                      0%    50%
+OO Concepts                                     25%    25%
+Collections and Generics                        44%    13%
+Fundamentals                                    38%    50%
+Total                                           25%    30%
