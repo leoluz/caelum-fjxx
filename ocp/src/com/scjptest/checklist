@@ -70,12 +70,12 @@
     - using static imports
 
 
-                                             Exam01 Exam02 Exam03
-Declarations, Initialization, and Scoping       20%    25%    50%
-Flow Control                                    16%    75%    20%
-API Contents                                    17%    13%    39%
-Concurrency                                      0%    50%    50%
-OO Concepts                                     25%    25%    70%
-Collections and Generics                        44%    13%    16%
-Fundamentals                                    38%    50%    33%
-Total                                           25%    30%    40%
+                                             Exam01 Exam02 Exam03 Exam04
+Declarations, Initialization, and Scoping       20%    25%    50%    13%
+Flow Control                                    16%    75%    20%    20%
+API Contents                                    17%    13%    39%    25%
+Concurrency                                      0%    50%    50%    12%
+OO Concepts                                     25%    25%    70%    37%
+Collections and Generics                        44%    13%    16%    28%
+Fundamentals                                    38%    50%    33%    80%
+Total                                           25%    30%    40%    26%
