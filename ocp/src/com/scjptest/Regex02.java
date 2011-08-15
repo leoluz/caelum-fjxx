@@ -13,9 +13,11 @@ public class Regex02 {
         String name = "leonardo Luz Almeida";
         Matcher matcher = pattern.matcher(name);
 
+        System.out.println("string: " + name);
+
         //find() searches for an occurrence of the patten
         while (matcher.find()) {
-            System.out.println("Group: " + matcher.group());
+            System.out.println("start: " + matcher.start() + " end: " + matcher.end() + " group: " + matcher.group());
         }
 
         //matches() searches an entire region for the pattern
