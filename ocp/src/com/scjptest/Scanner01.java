@@ -26,7 +26,7 @@ public class Scanner01 {
         Pattern p = scann.sc.delimiter();
 
         while (scann.sc.hasNext()) {
-            System.out.println("Delimiter: " + p.pattern());
+            System.out.println(scann.sc.next());
         }
     }
 }
