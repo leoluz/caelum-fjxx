@@ -25,7 +25,11 @@ public class Scanner01 {
         Scanner01 scann = new Scanner01();
         scann.readConsole();
 
-        String regex = "\\c";
+        String regex = "\\s";
+
+        if (args.length > 0)
+            regex = args[0];
+            
         Pattern p = Pattern.compile(regex);
         scann.sc.useDelimiter(p);
 

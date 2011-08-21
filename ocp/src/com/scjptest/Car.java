@@ -1,7 +1,8 @@
 package com.scjptest;
 
-public interface Car {
+abstract class Car implements Driveable {
 
-    public String getModel();
-
+    public String getModel() {
+        return "A generic model!";
+    }
 }
