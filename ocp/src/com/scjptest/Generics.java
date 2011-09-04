@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * class Generics
  * The idea of this class is to test every aspect of using Generics
  * in your code
+ *
  * @author Leonardo Luz
  */
 public class Generics {
@@ -20,6 +20,8 @@ public class Generics {
     private List<? super Cat> wildcardTest03 = new ArrayList<Cat>();
     private List<?> wildcardTest04 = new ArrayList<Integer>();
     private List<?> wildcardTest05 = new ArrayList<Object>();
+    private List wildcardTest06 = new ArrayList<Animal>();
+    private List<Animal> wildcardTest07 = new ArrayList();
 
     public void legacyCodeTest() {
 
@@ -63,12 +65,11 @@ public class Generics {
 
         dogs.add(new Dog());
 
-        //not possible to add a Cat or super type Animal
+        //Not possible to add a Cat or super type Animal
         //to a List<Dog>
         //
         //dogs.add(new Animal());
         //dogs.add(new Cat());
-        
         printCollection(dogs);
     }
 
@@ -103,11 +104,14 @@ public class Generics {
 
         Generics g = new Generics();
 
-        //g.testLegacyCode();
-        //g.addAnimalTest(g.animals);
-        //g.addDogTest(g.dogs);
-        //g.addDogAndSuperTest(g.animals);
+        List<Integer> ints = new ArrayList<Integer>();
+        g.wildcardTest06 = ints;
+
+        g.addAnimalTest(g.animals);
+        g.addDogTest(g.dogs);
+        g.addDogAndSuperTest(g.animals);
         g.addAnimalsHolder();
+        g.legacyCodeTest();
 
     }
 }
